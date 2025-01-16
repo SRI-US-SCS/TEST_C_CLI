@@ -1,9 +1,10 @@
 name: Aqua
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:   
+on: [pull_request,push]
+#on:
+#  push:
+#    branches:
+#      - main
+#  workflow_dispatch:   
 jobs:
   aqua:
     name: Aqua scanner
