@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+  namespace: mongo-namespace
+data:
+  GCP_KMS_ENCRYPTION_KEY_RESOURCE_ID: "projects/my-project/locations/global/keyRings/my-keyring/cryptoKeys/my-key"
+  SECRETS_GCP_PROJECT_ID: "dev-project"
